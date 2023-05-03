@@ -123,6 +123,7 @@ bool whisper_params_parse(int argc, char ** argv, whisper_params & params) {
         else if (arg == "-wt"   || arg == "--word-thold")     { params.word_thold     = std::stof(argv[++i]); }
         else if (arg == "-et"   || arg == "--entropy-thold")  { params.entropy_thold  = std::stof(argv[++i]); }
         else if (arg == "-lpt"  || arg == "--logprob-thold")  { params.logprob_thold  = std::stof(argv[++i]); }
+	else if (arg == "-ac"   || arg == "--audio-ctx")      { params.audio_ctx      = std::stoi(argv[++i]); }
         else if (arg == "-su"   || arg == "--speed-up")       { params.speed_up       = true; }
         else if (arg == "-tr"   || arg == "--translate")      { params.translate      = true; }
         else if (arg == "-di"   || arg == "--diarize")        { params.diarize        = true; }
